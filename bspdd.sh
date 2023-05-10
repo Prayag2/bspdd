@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
+
+# VARIABLES
 new_desktop_name=""
 
+# FUNCTIONS
 get_total() {
     echo $(bspc query -D | wc -l)
 }
@@ -9,12 +12,12 @@ get_occupied() {
 }
 
 add_desktop() {
-    echo "adding desktop"
+    echo "Adding desktop"
     bspc monitor -a "$new_desktop_name"
 }
 
 remove_desktops() {
-    echo "removing unoccupied desktops"
+    echo "Removing unoccupied desktops"
     total_desktops=$(get_total)
     occupied_desktops=$(get_occupied)
 
@@ -37,7 +40,6 @@ make_desktops(){
 }
 
 make_desktops
-
 bspc subscribe node_add node_remove node_transfer | while read -r line;
 do
     printf "Total: $total_desktops\nOccupied: $occupied_desktops\n"
