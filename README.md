@@ -1,11 +1,11 @@
 <p align="center">
-  <h1 align="center">BSPDD</h1>
+  <h1 align="center">⭐ BSPDD ⭐</h1>
   <p align="center">BSPWM Dynamic Desktops! A tiny script to make desktops dynamic in BSPWM!</center>
 </p>
 
 <p align="center">
 <a href="https://github.com/prayag2/bspdd/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/prayag2/bspdd?color=%233DAEE9&style=for-the-badge"></a>
-<a href="https://github.com/prayag2/bspdd/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/prayag2/kde_controlcentre?color=%233DAEE9&style=for-the-badge"></a>
+<a href="https://github.com/prayag2/bspdd/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/prayag2/bspdd?color=%233DAEE9&style=for-the-badge"></a>
 </p>
 
 
