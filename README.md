@@ -1,6 +1,7 @@
 <p align="center">
   <h1 align="center">⭐ BSPDD ⭐</h1>
-  <p align="center">BSPWM Dynamic Desktops! A tiny script to make desktops dynamic in BSPWM!</center>
+  <p align="center">BSPWM Dynamic Desktops! A tiny script to get i3 like dynamic desktops/workspaces in BSPWM!</p>
+  <p>Just like in i3wm, this script will create a new workspaces if all the workspaces are occupied and will destroy unoccupied ones automatically. On multi-monitor setups, each monitor will have a different set of workspaces independent of each other.</p>
 </p>
 
 <p align="center">
@@ -22,6 +23,7 @@ Add this to your `bspwmrc`
 ``` sh
 pgrep -u $(whoami) -f "bspdd" || bspdd.sh &
 ```
+This will make it run in the background and manage desktops automatically.
 
 ## TODO
 - [X] Confirm if this script works on dual/triple monitor setups.
