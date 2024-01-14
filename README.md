@@ -24,5 +24,5 @@ pgrep -u $(whoami) -f "bspdd" || bspdd.sh &
 ```
 
 ## TODO
-- [ ] Confirm if this script works on dual/triple monitor setups.
+- [X] Confirm if this script works on dual/triple monitor setups.
 - [ ] Add ability to name new desktops dynamically.
