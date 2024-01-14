@@ -25,6 +25,7 @@ done
 get_total() {
     echo $(bspc query -D -m "$current_monitor" | wc -l)
 }
+
 get_occupied() {
     echo $(bspc query -D -d ".occupied" -m "$current_monitor" | wc -l)
 }
@@ -39,10 +40,10 @@ remove_desktops() {
     total_desktops=$(get_total)
     occupied_desktops=$(get_occupied)
 
-    while [[ $occupied_desktops -lt $((total_desktops-1)) ]]; do
-        bspc desktop "any.!occupied" -r
-        total_desktops=$(get_total)
-        occupied_desktops=$(get_occupied)
+    bspc query -D -d ".!occupied" -m "$current_monitor" | sed '$d' | while read desktopID; do
+      bspc desktop "$desktopID" -r
+      total_desktops=$(get_total)
+      occupied_desktops=$(get_occupied)
     done
 }
 
