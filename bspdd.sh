@@ -4,9 +4,10 @@
 new_desktop_name=""
 monitor_sel=""
 help_text="Usage: bspdd.sh [options]\
+	\nbspdd.sh is a script that brings i3wm like dynamic desktop functionality to bspwm.\
     \nOptions: \
-    \n\t-n <name of new desktop>\
-    \n\t-m <MONITOR_SEL, see bspc(1) for more info >\n"
+    \n\t-n <name of new desktops>\n\t\tcreate new desktops with this name (default is  from nerd fonts)\
+    \n\t-m <MONITOR_SEL>\n\t\tuse a specific monitor (see bspc(1) for more info)\n"
 
 # Parse Arguments
 while getopts "n:m:h" opt; do
