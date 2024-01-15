@@ -23,7 +23,15 @@ Add this to your `bspwmrc`
 ``` sh
 pgrep -u $(whoami) -f "bspdd" || bspdd.sh &
 ```
-This will make it run in the background and manage desktops automatically.
+
+Help Text
+```
+Usage: bspdd.sh [options]    
+Options:     
+	-n <name of new desktop>    
+	-m <MONITOR_SEL, see bspc(1) for more info >
+```
+Here, `-m` can be used to get manage desktops for specific monitors. By default, all monitors are managed by default
 
 ## TODO
 - [X] Confirm if this script works on dual/triple monitor setups.
